@@ -1,1 +1,38 @@
 # shooting-game
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シューティングゲーム</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="game-info">
+        スコア: <span id="score">0</span> 残機: <span id="lives">5</span>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="start-screen">
+        <h1>シューティングゲーム</h1>
+        <p>敵を倒してハイスコアを目指せ！</p>
+        <button id="startButton">ゲームスタート</button>
+    </div>
+
+    <div id="game-over-screen" style="display: none;">
+        <h1>ゲームオーバー</h1>
+        <p>最終スコア: <span id="finalScore">0</span></p>
+        <button id="restartButton">もう一度プレイ</button>
+    </div>
+
+    <div id="touch-controls">
+        <div class="touch-button" id="leftButton">◀</div>
+        <div class="touch-button" id="fireButton">🔥</div>
+        <div class="touch-button" id="rightButton">▶</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
