@@ -1,0 +1,16 @@
+{
+    "name": "シューティングゲーム",
+    "short_name": "シューティング",
+    "description": "シンプルなシューティングゲームアプリ",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#222222",
+    "theme_color": "#007bff",
+    "icons": [
+        {
+            "src": "icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ]
+}
